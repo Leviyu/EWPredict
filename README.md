@@ -1,12 +1,27 @@
 EWPredict
 ==============================
 
-A short description of the project.
-
 The goal of this project is to utilize machine learning algorithms to catagorize seismic records based on information produced by [Empirical Wavelet Method](https://github.com/Leviyu/EQTime). 
 
 Being able to automatically predict the quality (accept or reject) of seismic record combined with Empriical Wavelet Making mathod would allows us to build seismic dataset in a fast, systematical and consistant manner. And being able to do so, would allow us to establish first step towards a new era for seismology. 
 
+## Project Objective
+
+We have gathered 50 processed earthquake event data from [Empirical Wavelet Method](https://github.com/Leviyu/EQTime). For each event, there are thousands of seismic stations recordings that is documented. Each seismic records is associated with comprehensive measurements that is related to its signal-to-noise ratio, waveform distortation, amplitude attenuation et al., as show below in Figure. 
+
+
+
+Fig.jpg <img src="../img/Fig9.jpg">
+
+
+### Data Detail
+The boxes on the right side is the algorithm that we implemented based on very simple rules to distinguish the signal from the background noise (in this example, the cross in the box means it is accepted and has high quality, otherwise it is rejected). Unfortunately, seismic data are intrinsicly complex and our simple algorithm does not perform at the level that we wanted. So the project is our efforts to train machine learning model to accurately classify our sesimic records into 'accept' and 'reject' catagory. 
+
+To train the model, we have manually classified seismic data from about 50 earthquakes, which is about 170k data entries. And we use this data to train supervised learning model and test the performance.
+
+## Models
+
+The data exploration and visualization can be found in the notebook under `./notebooks`
 
 
 Project Organization
