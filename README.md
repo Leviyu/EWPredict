@@ -11,7 +11,7 @@ We have gathered 50 processed earthquake event data from [Empirical Wavelet Meth
 
 
 
-Fig.jpg <img src="../img/Fig9.jpg">
+Fig.jpg <img src="./img/Fig9.jpg">
 
 
 ### Data Detail
